@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import database 
-from app.routers import auth  # <--- THIS WAS MISSING. ADD THIS LINE.
+from app.routers import auth 
 
+# python -m uvicorn app.main:app --reload
 # 1. Initialize the App
 app = FastAPI(
     title="Smart Diet Planner API",
