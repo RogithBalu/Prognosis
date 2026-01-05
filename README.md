@@ -1,50 +1,45 @@
-# 🏥 PrediCare: AI-Powered Disease Prediction System
+# 🥗 Smart Diet Planner (AI-Powered)
 
-![Python](https://img.shields.io/badge/Python-3.9-blueviolet)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.68-green)
-![Scikit-Learn](https://img.shields.io/badge/Sklearn-Modeling-orange)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+> A personalized health management platform that uses Machine Learning to generate disease-specific diet plans.
+
+![Project Status](https://img.shields.io/badge/Status-In%20Development-orange)
+![Python](https://img.shields.io/badge/Backend-FastAPI-009688)
+![React](https://img.shields.io/badge/Frontend-React.js-61DAFB)
+![ML](https://img.shields.io/badge/Model-Random%20Forest-F7931E)
 
 ## 📖 Overview
-**PrediCare** is a machine-learning-based healthcare system designed to assist users and medical professionals in identifying potential diseases based on symptoms. 
+The **Smart Diet Planner** is a web application designed to help patients manage chronic diseases (like Diabetes, Hypertension, PCOS) through proper nutrition. Unlike static diet sites, this project uses a **Random Forest Machine Learning model** to analyze user health data and predict the optimal diet type and daily calorie intake.
 
-Unlike simple diagnostic tools, PrediCare goes a step further by providing a **comprehensive medical report** that includes:
-* **Disease Prediction:** Identifies the disease with high accuracy using a Random Forest algorithm.
-* **Description:** A concise explanation of the condition.
-* **Dietary Recommendations:** Personalized food lists to aid recovery.
-* **Precautionary Measures:** Immediate steps to take (e.g., "See a doctor," "Rest").
-* **Medication Suggestions:** Common drugs used for the condition (for reference only).
-
----
-
-## 🚀 Features
-* **Multi-Symptom Analysis:** Supports 132+ distinct symptoms (e.g., *itching, skin_rash, high_fever*).
-* **High Accuracy:** Trained on a verified dataset of 4,920 medical records across 41 unique diseases.
-* **FastAPI Backend:** Lightweight and ultra-fast REST API response (<50ms latency).
-* **Robust ML Pipeline:** Uses a `RandomForestClassifier` with pre-trained vectors for instant inference.
-* **Scalable Architecture:** Modular codebase allowing easy addition of new diseases or symptoms.
+### 🌟 Key Features
+- **User Authentication:** Secure Login/Signup using JWT (JSON Web Tokens).
+- **Health Profiling:** Calculates BMI and categorizes users (Underweight, Obese, etc.).
+- **Smart Predictions:** Predicts strict diet guidelines and foods to avoid based on disease.
+- **Calorie Regression:** accurately estimates daily calorie requirements.
+- **History Tracking:** Saves generated plans to the user's dashboard.
 
 ---
 
-## 🛠️ Tech Stack
-* **Backend:** FastAPI (Python)
-* **Machine Learning:** Scikit-Learn, Pandas, NumPy
-* **Data Processing:** Pickle (for model serialization)
-* **Dataset:** 41 Diseases / 4,920 Patient Records
+## 🏗️ Architecture & Tech Stack
 
----
+The project follows a decoupled **Client-Server architecture** with a dedicated ML pipeline.
 
-## 📂 Project Structure
-```bash
-├── data/
-│   ├── Training.csv          # Main dataset
-│   ├── description.csv       # Disease descriptions
-│   ├── diets.csv             # Dietary recommendations
-│   ├── medications.csv       # Medicine info
-│   └── precautions_df.csv    # Precautions
-├── models/
-│   └── rf_model.pkl          # Serialized ML model
-├── main.py                   # FastAPI Application Entry Point
-├── predictor.py              # ML Logic & Inference Class
-├── requirements.txt          # Python Dependencies
-└── README.md
+| Component | Technology | Responsibility |
+| :--- | :--- | :--- |
+| **Frontend** | React.js, Tailwind CSS | User Interface, Form Handling, Dashboard |
+| **Backend** | Python, FastAPI | API Server, Auth Logic, Request Validation |
+| **Database** | SQLite (Dev) / PostgreSQL | Storing User Credentials & Diet History |
+| **ML Engine** | Scikit-Learn, Pandas | Random Forest Classifier & Regressor Models |
+
+### 📂 Project Structure
+```text
+Diet_Planner_Project/
+├── backend/            # FastAPI Server & Logic
+│   ├── models/         # Database Tables & ML .pkl files
+│   ├── auth/           # Login/Signup Logic
+│   └── main.py         # Application Entry Point
+├── frontend/           # React Application
+│   ├── src/components  # UI Components
+│   └── src/pages       # Login, Signup, Dashboard
+└── training/           # ML Research Lab
+    ├── data/           # Raw CSV Datasets
+    └── train.py        # Script to train and save models
