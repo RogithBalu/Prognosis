@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.core.database import database  # <--- IMPORT THIS
+from app.core.database import database 
+from app.routers import auth  # <--- THIS WAS MISSING. ADD THIS LINE.
 
 # 1. Initialize the App
 app = FastAPI(
@@ -22,10 +23,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# Register the Auth Router
+
+# 3. Register the Auth Router
+# Now this works because we imported 'auth' at the top
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
 
-# 3. Database Connection Check on Startup
+# 4. Database Connection Check on Startup
 @app.on_event("startup")
 async def startup_db_client():
     try:
@@ -35,8 +38,7 @@ async def startup_db_client():
     except Exception as e:
         print(f"❌ MongoDB Connection Failed: {e}")
 
-# 4. Root Route (Health Check)
+# 5. Root Route (Health Check)
 @app.get("/")
 async def health_check():
-    # You can now return the DB status in the health check
     return {"status": "active", "message": "Diet Planner Backend is running!"}
