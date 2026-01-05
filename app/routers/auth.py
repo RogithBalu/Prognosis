@@ -8,19 +8,28 @@ router = APIRouter()
 # --- SIGNUP ROUTE ---
 @router.post("/signup", response_model=dict)
 async def signup(user: UserCreate):
-    # 1. Check if user already exists
+    # 1. Check if email already exists
     existing_user = await users_collection.find_one({"email": user.email})
     if existing_user:
         raise HTTPException(status_code=400, detail="Email already registered")
+        
+    # Optional: Check if patient_id already exists?
+    existing_pid = await users_collection.find_one({"patient_id": user.patient_id})
+    if existing_pid:
+        raise HTTPException(status_code=400, detail="Patient ID already exists")
 
     # 2. Hash the password
     hashed_password = get_password_hash(user.password)
 
-    # 3. Create user document (Dictionary)
+    # 3. Create user document
     new_user = {
-        "username": user.username,
+        "name": user.name,
         "email": user.email,
-        "hashed_password": hashed_password
+        "hashed_password": hashed_password,
+        "age": user.age,
+        "contact_no": user.contact_no,
+        "patient_id": user.patient_id,
+        "gender": user.gender
     }
 
     # 4. Insert into MongoDB
@@ -41,6 +50,7 @@ async def login(user: UserLogin):
         raise HTTPException(status_code=400, detail="Invalid email or password")
 
     # 3. Generate JWT Token
-    access_token = create_access_token(data={"sub": db_user["email"]})
+    # We can include the patient_id in the token if we want to use it later
+    access_token = create_access_token(data={"sub": db_user["email"], "pid": db_user["patient_id"]})
 
     return {"access_token": access_token, "token_type": "bearer"}
