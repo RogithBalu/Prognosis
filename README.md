@@ -27,7 +27,7 @@ The project follows a decoupled **Client-Server architecture** with a dedicated 
 | :--- | :--- | :--- |
 | **Frontend** | React.js, Tailwind CSS | User Interface, Form Handling, Dashboard |
 | **Backend** | Python, FastAPI | API Server, Auth Logic, Request Validation |
-| **Database** | SQLite (Dev) / PostgreSQL | Storing User Credentials & Diet History |
+| **Database** | MongoDB | Storing User Credentials & Diet History |
 | **ML Engine** | Scikit-Learn, Pandas | Random Forest Classifier & Regressor Models |
 
 ### 📂 Project Structure
