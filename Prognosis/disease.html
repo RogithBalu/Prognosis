@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disease - Prognosis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+
+<div class="top-center-box">
+  <h1 class="main-brand">PROGNOSIS</h1>
+  <h2 class="form-title">Enter Disease</h2>
+
+  <div class="login-box">
+    <input id="disease" placeholder="Disease name">
+    <button class="home-btn" onclick="save()">Generate Diet</button>
+  </div>
+</div>
+
+<script>
+function save(){
+  localStorage.setItem("disease",document.getElementById("disease").value);
+  location.href="diet.html";
+}
+</script>
+<script src="neural.js"></script>
+</body>
+</html>

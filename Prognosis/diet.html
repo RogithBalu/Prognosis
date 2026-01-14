@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diet - Prognosis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+
+<div class="top-center-box">
+  <h1 class="main-brand">PROGNOSIS</h1>
+  <h2 class="form-title" id="diseaseName"></h2>
+
+  <div class="login-box">
+    <p>Fetching your personalized diet plan...</p>
+  </div>
+</div>
+
+<script>
+document.getElementById("diseaseName").innerText =
+  localStorage.getItem("disease");
+</script>
+
+<script src="neural.js"></script>
+</body>
+</html>
