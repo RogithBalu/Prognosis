@@ -1,501 +1,71 @@
 Disease,Age_Group,BMI_Category,Recommended_Diet,Avoid_Food,Calories_per_day
-PCOS,Adult,Overweight,"High protein, Low carb","Sugar, Processed food",1948
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1582
-Obesity,Senior,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1599
-Obesity,Adult,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1432
-PCOS,Senior,Obese,"High protein, Low carb","Sugar, Processed food",1893
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1720
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1608
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1615
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1657
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1846
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1824
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1892
-Hypertension,Teen,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1782
-Obesity,Senior,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1434
-Anemia,Senior,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1961
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1759
-Heart Disease,Teen,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1703
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1736
-Obesity,Adult,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1448
-Hypertension,Senior,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1602
-Diabetes,Senior,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1582
-Heart Disease,Senior,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1816
-Obesity,Teen,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1508
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1536
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1743
-Kidney Disease,Senior,Overweight,"Low protein, Low potassium","Banana, High protein food",1531
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1971
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1943
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1872
-Hypertension,Senior,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1709
-Hypertension,Adult,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1604
-Thyroid,Adult,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1877
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",2004
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1740
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1762
-Heart Disease,Teen,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1688
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1781
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1685
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1612
-Anemia,Senior,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1969
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1631
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1603
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1526
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1681
-Kidney Disease,Teen,Overweight,"Low protein, Low potassium","Banana, High protein food",1600
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1768
-Kidney Disease,Teen,Obese,"Low protein, Low potassium","Banana, High protein food",1574
-Hypertension,Adult,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1738
-Anemia,Teen,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1821
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1556
-Hypertension,Senior,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1771
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1835
-Diabetes,Adult,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1762
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1681
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1784
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1889
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1661
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1544
-Anemia,Senior,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1804
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1873
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1582
-Obesity,Senior,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1562
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1535
-Diabetes,Teen,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1645
-Anemia,Adult,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",2053
-Diabetes,Teen,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1564
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1552
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1602
-Hypertension,Adult,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1709
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",2029
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1854
-Obesity,Teen,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1428
-Thyroid,Adult,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1749
-Kidney Disease,Senior,Normal,"Low protein, Low potassium","Banana, High protein food",1514
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1844
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1790
-Anemia,Teen,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1832
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1828
-PCOS,Adult,Overweight,"High protein, Low carb","Sugar, Processed food",1980
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1598
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1879
-Hypertension,Adult,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1663
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1786
-Diabetes,Adult,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1610
-Anemia,Adult,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1826
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1791
-Kidney Disease,Teen,Overweight,"Low protein, Low potassium","Banana, High protein food",1685
-Anemia,Adult,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1943
-Diabetes,Adult,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1653
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1845
-Obesity,Teen,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1521
-Thyroid,Teen,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1813
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1852
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1587
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1831
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1629
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1697
-Obesity,Senior,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1475
-Diabetes,Senior,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1507
-Obesity,Adult,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1542
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1769
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1531
-Thyroid,Adult,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1674
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1788
-Hypertension,Teen,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1771
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1694
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1636
-Kidney Disease,Senior,Overweight,"Low protein, Low potassium","Banana, High protein food",1567
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1987
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1777
-Diabetes,Senior,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1570
-Kidney Disease,Adult,Overweight,"Low protein, Low potassium","Banana, High protein food",1682
-Hypertension,Senior,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1667
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1687
-Obesity,Senior,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1436
-Heart Disease,Adult,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1793
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1788
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1666
-Heart Disease,Adult,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1766
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1872
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1858
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1553
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1666
-Diabetes,Senior,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1582
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1806
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1966
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1567
-Obesity,Adult,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1459
-Diabetes,Teen,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1717
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1612
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1810
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1751
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1728
-Anemia,Senior,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1929
-Anemia,Senior,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1814
-PCOS,Senior,Normal,"High protein, Low carb","Sugar, Processed food",1972
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1526
-Heart Disease,Teen,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1856
-PCOS,Adult,Overweight,"High protein, Low carb","Sugar, Processed food",1973
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1789
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1877
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1597
-Heart Disease,Teen,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1874
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1854
-Obesity,Adult,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1454
-Obesity,Teen,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1473
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1614
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1878
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1871
-Anemia,Senior,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1953
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1947
-Heart Disease,Adult,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1819
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1630
-Obesity,Adult,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1515
-Kidney Disease,Senior,Overweight,"Low protein, Low potassium","Banana, High protein food",1505
-Diabetes,Teen,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1673
-Heart Disease,Teen,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1659
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1927
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1779
-Hypertension,Adult,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1666
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1869
-Hypertension,Adult,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1656
-Hypertension,Adult,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1687
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1782
-Diabetes,Senior,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1551
-Anemia,Senior,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1912
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1735
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1820
-Hypertension,Adult,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1680
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1740
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1870
-Hypertension,Senior,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1638
-Obesity,Adult,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1447
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1617
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1668
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1610
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1751
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1901
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1747
-Hypertension,Teen,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1656
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1933
-Thyroid,Adult,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1691
-Heart Disease,Adult,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1849
-Thyroid,Senior,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1726
-Kidney Disease,Adult,Overweight,"Low protein, Low potassium","Banana, High protein food",1625
-Hypertension,Adult,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1671
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1899
-Kidney Disease,Teen,Normal,"Low protein, Low potassium","Banana, High protein food",1691
-Obesity,Adult,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1594
-Hypertension,Adult,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1706
-Heart Disease,Teen,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1605
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1776
-Kidney Disease,Teen,Overweight,"Low protein, Low potassium","Banana, High protein food",1557
-PCOS,Senior,Normal,"High protein, Low carb","Sugar, Processed food",1812
-Hypertension,Senior,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1797
-Kidney Disease,Adult,Overweight,"Low protein, Low potassium","Banana, High protein food",1623
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1917
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1711
-Thyroid,Senior,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1819
-Heart Disease,Teen,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1660
-Hypertension,Teen,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1601
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1585
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1718
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1818
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1873
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1812
-Anemia,Teen,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",2001
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1759
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1748
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1600
-Kidney Disease,Senior,Normal,"Low protein, Low potassium","Banana, High protein food",1700
-Thyroid,Adult,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1675
-Obesity,Teen,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1518
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1836
-Anemia,Adult,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1967
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1771
-Hypertension,Teen,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1770
-Thyroid,Teen,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1725
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1704
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1747
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1589
-Diabetes,Adult,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1679
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1510
-Heart Disease,Senior,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1611
-Hypertension,Senior,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1747
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1757
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1702
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1510
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1978
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1898
-Obesity,Teen,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1559
-Obesity,Adult,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1593
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1768
-Hypertension,Teen,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1665
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1680
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1912
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1690
-Obesity,Adult,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1422
-Obesity,Adult,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1588
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",2064
-Obesity,Adult,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1443
-Kidney Disease,Adult,Overweight,"Low protein, Low potassium","Banana, High protein food",1633
-Obesity,Teen,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1416
-Obesity,Senior,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1587
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1719
-Heart Disease,Adult,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1733
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1869
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1883
-PCOS,Senior,Normal,"High protein, Low carb","Sugar, Processed food",1764
-Diabetes,Adult,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1719
-Anemia,Senior,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",2031
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1838
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1783
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1620
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1870
-Diabetes,Senior,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1794
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1892
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1975
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1940
-Anemia,Senior,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",2067
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1561
-Kidney Disease,Teen,Overweight,"Low protein, Low potassium","Banana, High protein food",1578
-Obesity,Adult,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1569
-Hypertension,Senior,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1665
-PCOS,Adult,Overweight,"High protein, Low carb","Sugar, Processed food",1791
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1768
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1682
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",2069
-Hypertension,Senior,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1736
-Heart Disease,Adult,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1681
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1594
-Anemia,Senior,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1845
-Obesity,Teen,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1427
-Diabetes,Adult,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1564
-Kidney Disease,Teen,Obese,"Low protein, Low potassium","Banana, High protein food",1574
-Anemia,Teen,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1817
-Anemia,Teen,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1949
-Kidney Disease,Teen,Normal,"Low protein, Low potassium","Banana, High protein food",1606
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1629
-Anemia,Senior,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1930
-Obesity,Adult,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1559
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1664
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1618
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1581
-Kidney Disease,Teen,Normal,"Low protein, Low potassium","Banana, High protein food",1596
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1924
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1842
-Hypertension,Adult,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1792
-Obesity,Senior,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1500
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1877
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1886
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1756
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1884
-Obesity,Senior,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1597
-Obesity,Adult,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1514
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1789
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1508
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1635
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1702
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1547
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1909
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1968
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1814
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1736
-PCOS,Senior,Normal,"High protein, Low carb","Sugar, Processed food",1733
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1734
-Heart Disease,Teen,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1637
-Diabetes,Adult,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1594
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1709
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1613
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1919
-Kidney Disease,Senior,Overweight,"Low protein, Low potassium","Banana, High protein food",1640
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",2073
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1615
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1634
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1871
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1673
-Hypertension,Teen,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1613
-Hypertension,Teen,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1603
-Diabetes,Adult,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1571
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1791
-Kidney Disease,Adult,Normal,"Low protein, Low potassium","Banana, High protein food",1654
-PCOS,Senior,Normal,"High protein, Low carb","Sugar, Processed food",1974
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1608
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1728
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1653
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1699
-Kidney Disease,Senior,Overweight,"Low protein, Low potassium","Banana, High protein food",1502
-Kidney Disease,Senior,Overweight,"Low protein, Low potassium","Banana, High protein food",1644
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1652
-Obesity,Senior,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1564
-Kidney Disease,Senior,Normal,"Low protein, Low potassium","Banana, High protein food",1633
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1771
-Kidney Disease,Adult,Overweight,"Low protein, Low potassium","Banana, High protein food",1521
-Obesity,Teen,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1546
-Heart Disease,Senior,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1873
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1879
-Heart Disease,Senior,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1774
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1721
-Hypertension,Adult,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1644
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1603
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1967
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1709
-PCOS,Senior,Obese,"High protein, Low carb","Sugar, Processed food",1921
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1570
-Anemia,Teen,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1865
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1907
-Diabetes,Senior,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1698
-Anemia,Adult,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",1860
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1842
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1984
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1996
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1729
-Diabetes,Senior,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1521
-Thyroid,Senior,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1667
-PCOS,Senior,Obese,"High protein, Low carb","Sugar, Processed food",1777
-Anemia,Teen,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1987
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1703
-Kidney Disease,Adult,Obese,"Low protein, Low potassium","Banana, High protein food",1589
-Diabetes,Adult,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1703
-Hypertension,Teen,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1622
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1618
-Hypertension,Adult,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1671
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1887
-Kidney Disease,Teen,Normal,"Low protein, Low potassium","Banana, High protein food",1610
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1808
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1982
-Kidney Disease,Teen,Overweight,"Low protein, Low potassium","Banana, High protein food",1628
-Heart Disease,Adult,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1670
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1777
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1959
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1845
-Obesity,Teen,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1579
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1800
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1595
-Obesity,Teen,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1463
-PCOS,Adult,Overweight,"High protein, Low carb","Sugar, Processed food",1801
-Kidney Disease,Teen,Obese,"Low protein, Low potassium","Banana, High protein food",1699
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1893
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1772
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1837
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1964
-Thyroid,Adult,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1789
-Thyroid,Teen,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1865
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1935
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1703
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1604
-Hypertension,Adult,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1745
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1807
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1783
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1810
-Obesity,Adult,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1424
-Kidney Disease,Teen,Normal,"Low protein, Low potassium","Banana, High protein food",1638
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1605
-Diabetes,Senior,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1795
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1832
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1523
-Hypertension,Senior,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1641
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1901
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1823
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1844
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1992
-PCOS,Adult,Overweight,"High protein, Low carb","Sugar, Processed food",1793
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",2007
-Obesity,Senior,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1453
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1970
-Hypertension,Adult,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1761
-Hypertension,Senior,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1666
-PCOS,Senior,Obese,"High protein, Low carb","Sugar, Processed food",1806
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1638
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1776
-Obesity,Adult,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1401
-Heart Disease,Senior,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1720
-Obesity,Adult,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1571
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1665
-Diabetes,Adult,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1702
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1898
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1787
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1878
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1836
-Obesity,Senior,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1427
-Thyroid,Teen,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1856
-Anemia,Adult,Normal,"Iron rich foods, Leafy greens","Tea, Coffee",2042
-Heart Disease,Teen,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1613
-Hypertension,Adult,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1691
-Obesity,Adult,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1513
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1813
-Kidney Disease,Teen,Obese,"Low protein, Low potassium","Banana, High protein food",1663
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1774
-Anemia,Teen,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",2087
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1638
-Kidney Disease,Teen,Overweight,"Low protein, Low potassium","Banana, High protein food",1639
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1737
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1620
-Hypertension,Teen,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1702
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1799
-PCOS,Senior,Normal,"High protein, Low carb","Sugar, Processed food",1761
-Obesity,Teen,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1544
-Heart Disease,Senior,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1749
-Thyroid,Senior,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1854
-Heart Disease,Teen,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1707
-Anemia,Senior,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1881
-Thyroid,Senior,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1835
-Thyroid,Adult,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1661
-Anemia,Senior,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1806
-Hypertension,Teen,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1674
-Heart Disease,Adult,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1708
-Heart Disease,Teen,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1616
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1713
-Diabetes,Teen,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1742
-Heart Disease,Senior,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1751
-Kidney Disease,Adult,Overweight,"Low protein, Low potassium","Banana, High protein food",1620
-Anemia,Teen,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1984
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1785
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1829
-Kidney Disease,Senior,Obese,"Low protein, Low potassium","Banana, High protein food",1594
-Thyroid,Adult,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1818
-PCOS,Adult,Obese,"High protein, Low carb","Sugar, Processed food",1959
-Diabetes,Teen,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1612
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1897
-PCOS,Senior,Obese,"High protein, Low carb","Sugar, Processed food",1914
-Hypertension,Teen,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1650
-Thyroid,Adult,Obese,"Balanced diet, Selenium rich food","Soy excess, Junk food",1667
-Diabetes,Senior,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1568
-PCOS,Adult,Overweight,"High protein, Low carb","Sugar, Processed food",1706
-Diabetes,Teen,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1787
-Heart Disease,Teen,Obese,"Low fat, Omega-3 foods","Red meat, Fried food",1890
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1581
-PCOS,Teen,Obese,"High protein, Low carb","Sugar, Processed food",1963
-Hypertension,Senior,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1667
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1997
-PCOS,Senior,Overweight,"High protein, Low carb","Sugar, Processed food",1781
-Obesity,Senior,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1594
-Obesity,Senior,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1466
-PCOS,Teen,Overweight,"High protein, Low carb","Sugar, Processed food",1849
-Heart Disease,Senior,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1800
-Hypertension,Teen,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1642
-Thyroid,Teen,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1800
-Thyroid,Adult,Normal,"Balanced diet, Selenium rich food","Soy excess, Junk food",1646
-Hypertension,Adult,Obese,"Low salt, Fruits, Vegetables","Salt, Pickles",1787
-Heart Disease,Adult,Normal,"Low fat, Omega-3 foods","Red meat, Fried food",1795
-Kidney Disease,Adult,Overweight,"Low protein, Low potassium","Banana, High protein food",1615
-PCOS,Adult,Normal,"High protein, Low carb","Sugar, Processed food",1799
-Diabetes,Adult,Normal,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1595
-Hypertension,Senior,Overweight,"Low salt, Fruits, Vegetables","Salt, Pickles",1747
-Obesity,Senior,Obese,"Calorie deficit, High fiber","Fast food, Sugary drinks",1493
-PCOS,Teen,Normal,"High protein, Low carb","Sugar, Processed food",1969
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1869
-Hypertension,Adult,Normal,"Low salt, Fruits, Vegetables","Salt, Pickles",1603
-Anemia,Adult,Overweight,"Iron rich foods, Leafy greens","Tea, Coffee",1922
-Anemia,Adult,Obese,"Iron rich foods, Leafy greens","Tea, Coffee",1885
-Diabetes,Senior,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1758
-Obesity,Adult,Normal,"Calorie deficit, High fiber","Fast food, Sugary drinks",1415
-Heart Disease,Teen,Overweight,"Low fat, Omega-3 foods","Red meat, Fried food",1658
-Diabetes,Adult,Overweight,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1680
-Obesity,Senior,Overweight,"Calorie deficit, High fiber","Fast food, Sugary drinks",1454
-Thyroid,Adult,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1625
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1732
-Thyroid,Teen,Overweight,"Balanced diet, Selenium rich food","Soy excess, Junk food",1609
-Diabetes,Senior,Obese,"Low sugar, High fiber, Whole grains","Sugar, Refined carbs",1672
+Diabetes,Adult,Overweight,"Low Sugar & High Fiber Diet","Sugar, Sweets, White Rice",1800
+Diabetes,Senior,Obese,"Low Carb & Low Glycemic Diet","Sugary Drinks, Potatoes, Cakes",1600
+Diabetes,Teen,Normal,"Balanced Low Sugar Diet","Chocolates, Soda, Candy",2000
+Hypertension,Adult,Obese,"DASH Diet (Low Sodium)","Salt, Pickles, Canned Soup",1600
+Hypertension,Senior,Overweight,"Low Sodium & Low Fat Diet","Processed Meat, Salty Snacks",1700
+Hypertension,Adult,Normal,"Balanced DASH Diet","Excess Salt, Fast Food",2000
+PCOS,Adult,Overweight,"Anti-Inflammatory & Low GI Diet","Dairy, Sugar, Refined Carbs",1700
+PCOS,Teen,Obese,"High Protein & Low Carb Diet","Junk Food, White Bread, Pizza",1600
+PCOS,Adult,Normal,"Balanced Hormone Friendly Diet","Soy, Excessive Sugar",1900
+Heart Disease,Senior,Obese,"Mediterranean Diet","Red Meat, Butter, Fried Food",1500
+Heart Disease,Adult,Overweight,"Low Cholesterol & Low Fat","Egg Yolks, Fast Food, Burgers",1700
+Heart Disease,Adult,Normal,"Heart Healthy Balanced Diet","Trans Fats, Deep Fried Items",2000
+Obesity,Adult,Obese,"Calorie Deficit & High Protein","Junk Food, Sugary Drinks, Pizza",1400
+Obesity,Teen,Overweight,"Portion Control & High Fiber","Sweets, Fast Food, Chips",1800
+Obesity,Senior,Obese,"Low Fat & High Fiber Diet","Bakery Items, Cream, Oil",1500
+Kidney Disease,Senior,Overweight,"Low Protein & Low Sodium","High Potassium Fruits, Salt",1600
+Kidney Disease,Adult,Obese,"Renal Diet (Low Phosphorus)","Bananas, Tomatoes, Dairy",1700
+Thyroid,Adult,Overweight,"Gluten-Free & Iodine Rich","Raw Cruciferous Veggies, Soy",1600
+Thyroid,Teen,Normal,"Balanced Thyroid Friendly Diet","Processed Food, Gluten",1900
+Anemia,Adult,Underweight,"Iron-Rich & High Vitamin C","Tea/Coffee with meals, Calcium",2200
+Anemia,Teen,Normal,"Iron-Rich Balanced Diet","Junk Food, Low Nutrient Food",2000
+Gastritis,Adult,Normal,"Bland & Low Acid Diet","Spicy Food, Citrus, Coffee",1800
+Gastritis,Senior,Overweight,"Easy to Digest & Low Fat","Fried Food, Alcohol, Chili",1600
+Underweight,Teen,Underweight,"High Calorie & High Protein","Low Calorie Salads, Soda",2500
+Underweight,Adult,Underweight,"Muscle Gain & High Carb","Skipping Meals, Junk Food",2600
+Healthy,Adult,Normal,"Balanced Maintenance Diet","Processed Sugar, Excess Fat",2200
+Healthy,Teen,Normal,"High Energy Growth Diet","Junk Food, Soda",2400
+Healthy,Senior,Normal,"High Fiber & Calcium Rich","Salty Food, Sweets",1800
+Viral Fever,Adult,Normal,"High Fluid & Soft Diet","Spicy Food, Heavy Meat, Fried Items",1800
+Viral Fever,Teen,Underweight,"High Calorie Soft Diet","Junk Food, Cold Drinks",2000
+Viral Fever,Senior,Normal,"Easy to Digest Broths & Soups","Raw Veggies, Hard Grains",1600
+Common Cold,Adult,Normal,"Vitamin C Rich & Warm Fluids","Dairy, Cold Drinks, Ice Cream",2000
+Common Cold,Teen,Normal,"Immune Boosting Light Diet","Sweets, Fried Food, Soda",2100
+Common Cold,Senior,Overweight,"Warm Soups & Herbal Tea","Heavy Cream, Frozen Food",1600
+HIV/AIDS,Adult,Underweight,"High Protein & Calorie Dense","Raw Fish, Unpasteurized Dairy, Alcohol",3000
+HIV/AIDS,Adult,Normal,"Balanced High Immunity Diet","Raw Eggs, Sushi, Soft Cheese",2500
+HIV/AIDS,Senior,Underweight,"Soft High Protein Diet","Undercooked Meat, Raw Veggies",2200
+Typhoid,Adult,Underweight,"High Calorie Low Fiber","Whole Grains, Raw Salads, Spicy Food",2500
+Typhoid,Teen,Normal,"Easy to Digest Soft Diet","Fried Snacks, Heavy Pastries",2000
+Dengue,Adult,Normal,"High Fluid & Papaya Leaf Juice","Oily Food, Spicy Food, Caffeine",2000
+Dengue,Teen,Underweight,"Hydration & Soft Proteins","Red Meat, Processed Snacks",2200
+Malaria,Adult,Normal,"High Carbohydrate & Protein","Fats, Chili, Pickles",2100
+Tuberculosis,Adult,Underweight,"High Protein & Energy Rich","Alcohol, Tobacco, Carbonated Drinks",2800
+Tuberculosis,Senior,Underweight,"Nutrient Dense Soft Diet","Caffeine, Refined Sugar",2400
+Diarrhea,Adult,Normal,"BRAT Diet (Banana Rice Toast)","Dairy, Caffeine, Spicy Food",1800
+Diarrhea,Teen,Underweight,"Low Residue & Electrolytes","Fiber, Fried Food, Milk",2000
+Acid Reflux,Adult,Overweight,"Low Acid & Low Fat","Citrus, Coffee, Chocolate, Mint",1700
+Acid Reflux,Senior,Obese,"Bland Gastric Diet","Spicy Food, Tomatoes, Onions",1500
+Pregnancy,Adult,Normal,"Prenatal Balanced Diet","Raw Fish, Alcohol, Unpasteurized Cheese",2300
+Pregnancy,Adult,Overweight,"Gestational Diabetes Diet","Simple Sugars, Fruit Juice",2000
+Celiac Disease,Adult,Normal,"Strict Gluten-Free Diet","Wheat, Barley, Rye",2100
+Celiac Disease,Teen,Underweight,"Gluten-Free High Calorie","Bread, Pasta, Beer",2500
+Lactose Intolerance,Adult,Normal,"Lactose-Free Calcium Rich","Milk, Ice Cream, Soft Cheese",2100
+High Cholesterol,Adult,Obese,"High Soluble Fiber Diet","Red Meat, Butter, Cheese",1600
+High Cholesterol,Senior,Overweight,"Heart Healthy Low Fat","Pastries, Fried Chicken",1700
+Gout,Adult,Obese,"Low Purine Diet","Red Meat, Shellfish, Alcohol",1600
+Gout,Senior,Overweight,"Uric Acid Control Diet","Organ Meats, Beer, Sardines",1700
+Osteoporosis,Senior,Underweight,"Calcium & Vitamin D Rich","Caffeine, Sodium, Alcohol",2000
+Liver Disease,Adult,Obese,"Liver Friendly Low Fat","Alcohol, Fried Food, Sugar",1500
+Liver Disease,Senior,Overweight,"Low Salt & High Protein","Processed Meat, Canned Food",1600
+Migraine,Adult,Normal,"Migraine Trigger Free Diet","Aged Cheese, Chocolate, Wine",2000
+Asthma,Adult,Overweight,"Anti-Inflammatory & Magnesium Rich","Sulfites (Dried Fruit), Processed Meat",1800
+Asthma,Teen,Normal,"Fresh Fruit & Omega-3","Fast Food, Dairy (if sensitive)",2200
+Pneumonia,Senior,Normal,"High Protein & High Fluid","Cold Drinks, Dairy, Sugar",1900
+Jaundice,Adult,Normal,"Low Fat & High Carb","Fried Food, Red Meat, Butter",1600
+Ulcer,Adult,Normal,"Bland High Fiber Diet","Spicy Food, Coffee, Alcohol",1800
+Constipation,Senior,Overweight,"High Fiber & Hydration","Processed Food, White Bread, Cheese",1600
+Constipation,Adult,Normal,"High Fiber & Probiotics","Meat, Fast Food",1900
+Chickenpox,Teen,Normal,"Cooling & Soft Diet","Spicy Food, Salty Food, Citrus",2000
+Arthritis,Senior,Obese,"Anti-Inflammatory (Mediterranean)","Red Meat, Sugar, Fried Food",1500
