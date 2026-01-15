@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse
 from app.core.database import database
 from app.routers import auth, diet 
 import os
-import subprocess # 👈 Import this to run the training script
+import subprocess # 👈 New Import
 
 # 1️⃣ Initialize App
 app = FastAPI(
@@ -28,7 +28,7 @@ app.add_middleware(
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
 app.include_router(diet.router) 
 
-# 4️⃣ Database & ML Training on Startup
+# 4️⃣ Database & ML Training on Startup (THE FIX)
 @app.on_event("startup")
 async def startup_events():
     # A. Connect to Database
@@ -38,26 +38,22 @@ async def startup_events():
     except Exception as e:
         print(f"❌ MongoDB Connection Failed: {e}")
 
-    # B. Train ML Model (The Fix) 🧠
-    # This runs 'python app/ml/ml.py' every time the server starts
-    model_path = "app/ml/diet_classifier.pkl"
-    script_path = "app/ml/ml.py"
+    # B. Train ML Model on Server 🧠
+    # We force the server to run the training script right now.
+    # This solves the "Missing File" and "Version Mismatch" errors.
+    print("⏳ Checking ML Model...")
+    script_path = os.path.join("app", "ml", "ml.py")
     
-    if not os.path.exists(model_path):
-        print("⚠️ Model not found! Training a new one now...")
-        try:
-            # Run the training script inside the container
-            subprocess.run(["python", script_path], check=True)
-            print("✅ New ML Model trained and saved successfully!")
-        except Exception as e:
-            print(f"❌ Failed to train model: {e}")
-    else:
-        print("✅ ML Model found.")
+    try:
+        # Run python app/ml/ml.py
+        subprocess.run(["python", script_path], check=True)
+        print("✅ New ML Model trained and saved successfully on Server!")
+    except Exception as e:
+        print(f"❌ Failed to train model: {e}")
 
 # 5️⃣ Serve Frontend
-# WARNING: Linux is case-sensitive! Ensure your folder is exactly "Front-End" or "frontend"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FRONTEND_DIR = os.path.join(BASE_DIR, "Front-End") 
+FRONTEND_DIR = os.path.join(BASE_DIR, "Front-End") # Ensure this matches GitHub folder name exactly!
 
 @app.get("/")
 async def read_root():
