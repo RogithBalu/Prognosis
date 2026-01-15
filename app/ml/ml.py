@@ -1,8 +1,24 @@
 import pandas as pd
-import pickle
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import LabelEncoder
-df = pd.read_csv("mldataset.csv")
+import pickle
+import os  # 👈 Import this!
+
+# Get the folder where THIS script (ml.py) lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Build the correct path to the CSV file
+csv_path = os.path.join(BASE_DIR, "mldataset.csv")
+
+# Load the dataset using the safe path
+try:
+    df = pd.read_csv(csv_path)
+    print(f"✅ Loaded dataset from: {csv_path}")
+except FileNotFoundError:
+    print(f"❌ ERROR: Could not find file at {csv_path}")
+    exit(1)
+
+# ... (Rest of your code remains the same) ...
 print(df.isnull().sum())
 
 print(df.head(10))
@@ -52,4 +68,12 @@ print("Predicted Diet:", diet)
 print("Avoid Food:", avoid)
 
 
-print("Diet classifier saved successfully")
+# ... (training code) ...
+
+# Save the model using the safe path
+model_path = os.path.join(BASE_DIR, "diet_classifier.pkl")
+
+with open(model_path, "wb") as f:
+    pickle.dump(clf, f)
+
+print("✅ Diet classifier saved successfully")
