@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles  # 👈 New Import
+from fastapi.responses import FileResponse   # 👈 New Import
 from app.core.database import database
 from app.routers import auth, diet 
+import os
 
 # 1️⃣ Initialize the FastAPI app
 app = FastAPI(
@@ -10,9 +13,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# 2️⃣ Setup CORS (FIXED)
-# We use "*" to allow ALL origins. 
-# This fixes the "Failed to fetch" and "400 Bad Request" errors.
+# 2️⃣ Setup CORS
 origins = ["*"]
 
 app.add_middleware(
@@ -23,13 +24,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 3️⃣ Register routers
+# 3️⃣ Register routers (API Endpoints)
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
-
-# FIX: Removed 'tags=["ML Prediction"]' because it is already named in diet.py
 app.include_router(diet.router) 
 
-# 4️⃣ Database connection check on startup
+# 4️⃣ Database connection check
 @app.on_event("startup")
 async def startup_db_client():
     try:
@@ -38,7 +37,20 @@ async def startup_db_client():
     except Exception as e:
         print(f"❌ MongoDB Connection Failed: {e}")
 
-# 5️⃣ Root route (health check)
+# ==========================================
+# 5️⃣ SERVE FRONTEND (The Fix)
+# ==========================================
+
+# A. Find the path to the 'frontend' folder
+# (Goes up two levels from 'app/routers' or one level from 'app')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FRONTEND_DIR = os.path.join(BASE_DIR, "Front-End")
+
+# B. Serve index.html at the root URL "/"
 @app.get("/")
-async def health_check():
-    return {"status": "active", "message": "Diet Planner Backend is running!"}
+async def read_root():
+    return FileResponse(os.path.join(FRONTEND_DIR, "index.html"))
+
+# C. Mount the rest of the files (CSS, JS, login.html, etc.)
+# This tells FastAPI: "If the user asks for /style.css, look in the frontend folder"
+app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="static")
