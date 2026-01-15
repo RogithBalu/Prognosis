@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://prognosis-9844.onrender.com";
 
 // ==========================================
 // 1. LOGIN LOGIC (For login.html)
