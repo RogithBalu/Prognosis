@@ -74,3 +74,5 @@ def predict_diet_plan(age_group: str, bmi_category: str, disease: str):
     except Exception as e:
         print(f"Prediction logic error: {e}")
         return None, None, None
+    
+load_model()

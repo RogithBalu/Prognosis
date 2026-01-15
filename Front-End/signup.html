@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account - Prognosis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+
+<div class="top-center-box" style="margin-top: 5vh;">
+  <h1 class="main-brand">PROGNOSIS</h1>
+  <h2 class="form-title">Create Account</h2>
+
+  <form class="login-box" id="signupForm">
+    
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+
+    <div style="display: flex; gap: 10px; width: 100%;">
+        <input type="number" id="age" placeholder="Age" required style="width: 50%;">
+        <select id="gender" required style="width: 50%; height: 45px; margin: 10px 0; padding-left: 10px; border-radius: 25px; border: none; outline: none;">
+            <option value="" disabled selected>Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+
+    <input type="text" id="contact" placeholder="Contact Number" required>
+    <input type="text" id="pid" placeholder="Patient ID (Unique)" required>
+
+    <button type="submit" class="home-btn">Sign Up</button>
+  </form>
+
+  <p id="signupError" style="color: red; display: none; text-align: center; margin-top: 10px;"></p>
+
+  <p style="text-align: center; color: white; margin-top: 15px;">
+      Already have an account? <a href="login.html" style="color: #00d4ff; text-decoration: none;">Login</a>
+  </p>
+</div>
+
+<script src="neural.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

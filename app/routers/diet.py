@@ -1,35 +1,20 @@
 from fastapi import APIRouter, HTTPException, Depends
 from datetime import datetime
-import pandas as pd
-import numpy as np
-import pickle
-import os
-
-# Import your modules
 from app.schemas.diet import DietRequest, DietResponse
-from app.core.database import database  # Your MongoDB connection
-from app.routers.auth import get_current_user # To secure the endpoint
+from app.core.database import database
+from app.routers.auth import get_current_user  # 👈 Import enabled!
+from app.ml.predictor import predict_diet_plan # 👈 Uses your ML helper
 
 router = APIRouter(
     prefix="/diet",
     tags=["Diet Planner"]
 )
 
-# --- ML MODEL LOADER (The "Brain") ---
-# Try to load the model if it exists, otherwise use a fallback
-MODEL_PATH = "app/ml/diet_model.pkl"
-model_data = None
-
-if os.path.exists(MODEL_PATH):
-    try:
-        with open(MODEL_PATH, "rb") as f:
-            model_data = pickle.load(f)
-        print("✅ ML Model loaded successfully.")
-    except Exception as e:
-        print(f"⚠️ Error loading ML model: {e}")
-
 # --- HELPER FUNCTIONS ---
 def calculate_bmi(weight, height):
+    # Prevent division by zero
+    if height <= 0: return 0, "Unknown"
+    
     height_m = height / 100
     bmi = weight / (height_m ** 2)
     
@@ -49,77 +34,61 @@ def get_age_group(age):
 @router.post("/predict", response_model=DietResponse)
 async def generate_diet_plan(
     request: DietRequest, 
-    current_user: dict = Depends(get_current_user) # 🔒 Protect this route
+    current_user: dict = Depends(get_current_user) # 🔒 Security enabled
 ):
     # 1. Calculate Health Stats
     bmi, bmi_category = calculate_bmi(request.weight, request.height)
     age_group = get_age_group(request.age)
 
-    # 2. PREDICTION LOGIC
-    # Scenario A: If ML Model is ready, use it
-    if model_data:
-        try:
-            # Prepare input vector (Matches training data)
-            # You might need to update this part once ML team gives final specs
-            disease_code = model_data["le_disease"].transform([request.disease])[0]
-            age_code = model_data["le_age_group"].transform([age_group])[0]
-            bmi_code = model_data["le_bmi"].transform([bmi_category])[0]
-            
-            input_vector = np.array([[disease_code, age_code, bmi_code]])
-            
-            # Predict
-            pred_diet_code = model_data["model_diet"].predict(input_vector)[0]
-            pred_avoid_code = model_data["model_avoid"].predict(input_vector)[0]
-            pred_calories = model_data["model_calories"].predict(input_vector)[0]
-            
-            # Decode
-            diet_type = model_data["le_diet"].inverse_transform([pred_diet_code])[0]
-            avoid_foods = model_data["le_avoid"].inverse_transform([pred_avoid_code])[0]
-            calories = int(pred_calories)
-            
-        except Exception as e:
-            # Fallback if model fails specific prediction
-            print(f"Prediction Error: {e}")
-            diet_type = "Balanced Diet (Model Error)"
-            avoid_foods = "Processed Foods"
-            calories = 2000
+    # 2. PREDICTION LOGIC (Using the Helper)
+    # This automatically handles the ML model OR falls back to rules if model fails
+    diet_text, avoid_text, calories = predict_diet_plan(
+        age_group=age_group,
+        bmi_category=bmi_category,
+        disease=request.disease
+    )
 
-    # Scenario B: Fallback (Rule-Based) - Use this until ML team is ready
-    else:
-        # Simple logic so Frontend doesn't break
+    # 3. Fallback Safety (Just in case ML returns nothing)
+    if not diet_text:
         if "diabetes" in request.disease.lower():
-            diet_type = "Low Sugar, High Fiber"
-            avoid_foods = "Sugar, White Rice, Fruit Juices"
+            diet_text = "Low Sugar, High Fiber"
+            avoid_text = "Sugar, White Rice, Fruit Juices"
             calories = 1600
         elif "hypertension" in request.disease.lower():
-            diet_type = "DASH Diet (Low Sodium)"
-            avoid_foods = "Salt, Pickles, Canned Soup"
+            diet_text = "DASH Diet (Low Sodium)"
+            avoid_text = "Salt, Pickles, Canned Soup"
             calories = 1500
         else:
-            diet_type = "Balanced Healthy Diet"
-            avoid_foods = "Junk Food, Deep Fried Items"
+            diet_text = "Balanced Healthy Diet"
+            avoid_text = "Junk Food, Deep Fried Items"
             calories = 1800
 
-    # 3. Save to MongoDB History
-    # We store the inputs + outputs + user_id
+    # Ensure avoid_text is a list for the Frontend
+    avoid_list = avoid_text.split(",") if isinstance(avoid_text, str) else [avoid_text]
+
+    # 4. Save to MongoDB History
+    # We do this AFTER we have the results
     history_entry = {
         "user_id": current_user["_id"],
         "timestamp": datetime.utcnow(),
         "input": request.dict(),
         "output": {
-            "diet_type": diet_type,
+            "diet_type": diet_text,
             "calories": calories,
-            "avoid_foods": avoid_foods,
+            "avoid_foods": avoid_list,
             "bmi": bmi
         }
     }
-    await database.diet_history.insert_one(history_entry)
+    
+    # Use the correct collection name (diet_plans_collection or similar)
+    # Assuming 'diet_plans' based on your database.py
+    await database.get_collection("diet_plans").insert_one(history_entry)
 
-    # 4. Return Response
+    # 5. Return Response
     return {
-        "diet_type": diet_type,
+        "diet_type": diet_text,
         "calories": calories,
-        "avoid_foods": avoid_foods.split(",") if isinstance(avoid_foods, str) else avoid_foods,
+        "avoid_foods": avoid_list,
         "bmi_value": bmi,
         "bmi_category": bmi_category,
         "message": f"Plan generated successfully for {request.disease}"

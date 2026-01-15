@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import database
-from app.routers import auth, predict
+from app.routers import auth, diet 
 
 # 1️⃣ Initialize the FastAPI app
 app = FastAPI(
@@ -10,11 +10,10 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# 2️⃣ Setup CORS
-origins = [
-    "http://localhost:3000",
-    "http://localhost:5173",
-]
+# 2️⃣ Setup CORS (FIXED)
+# We use "*" to allow ALL origins. 
+# This fixes the "Failed to fetch" and "400 Bad Request" errors.
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -26,13 +25,15 @@ app.add_middleware(
 
 # 3️⃣ Register routers
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
-app.include_router(predict.router, tags=["ML Prediction"])
+
+# FIX: Removed 'tags=["ML Prediction"]' because it is already named in diet.py
+app.include_router(diet.router) 
 
 # 4️⃣ Database connection check on startup
 @app.on_event("startup")
 async def startup_db_client():
     try:
-        await database.command("ping")
+        await database.client.admin.command('ping')
         print("✅ MongoDB Connected Successfully!")
     except Exception as e:
         print(f"❌ MongoDB Connection Failed: {e}")

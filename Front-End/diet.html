@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Diet Plan - Prognosis</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      /* Page specific styles for the results */
+      .result-item { margin-bottom: 15px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; }
+      .result-label { color: #00d4ff; font-size: 0.85em; text-transform: uppercase; display: block; margin-bottom: 5px; letter-spacing: 1px;}
+      .result-value { color: white; font-size: 1.2em; font-weight: bold; }
+      .hidden { display: none; }
+      .error-text { color: #ff4d4d; font-size: 0.9em; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<canvas id="network"></canvas>
+
+<div class="top-center-box" style="margin-top: 5vh;">
+  <h1 class="main-brand">PROGNOSIS</h1>
+  <h2 class="form-title" id="pageTitle">Personalized Plan</h2>
+
+  <div class="login-box" id="loadingBox">
+    <p>Analyzing health metrics...</p>
+    <div style="margin-top:15px; font-size: 24px;">🤖 🥗 🍎</div>
+  </div>
+
+  <div class="login-box hidden" id="resultBox">
+      
+      <div class="result-item">
+          <span class="result-label">Diagnosed Condition</span>
+          <span class="result-value" id="dispDisease"></span>
+      </div>
+
+      <div class="result-item">
+          <span class="result-label">BMI Score</span>
+          <span class="result-value" id="dispBMI"></span>
+      </div>
+
+      <div class="result-item">
+          <span class="result-label">Recommended Diet</span>
+          <span class="result-value" id="dispDiet"></span>
+      </div>
+
+      <div class="result-item">
+          <span class="result-label">Daily Calories</span>
+          <span class="result-value" id="dispCalories"></span>
+      </div>
+
+      <div class="result-item" style="border: none;">
+          <span class="result-label" style="color: #ff4d4d;">Foods to Avoid</span>
+          <span class="result-value" id="dispAvoid"></span>
+      </div>
+
+      <button class="home-btn" onclick="location.href='disease.html'">Analyze Another</button>
+  </div>
+  
+  <p id="errorMsg" class="error-text hidden"></p>
+
+</div>
+
+<script src="neural.js"></script>
+
+<script>
+    const API_URL = "http://127.0.0.1:8000";
+
+    async function getDietPlan() {
+        const token = localStorage.getItem("token");
+        
+        // 1. Retrieve Data saved by disease.html
+        const disease = localStorage.getItem("disease");
+        const weight = localStorage.getItem("weight");
+        const height = localStorage.getItem("height");
+
+        // Update Title immediately
+        if(disease) document.getElementById("pageTitle").innerText = "Plan for " + disease;
+
+        // Security Check
+        if (!token) {
+            window.location.href = "login.html";
+            return;
+        }
+
+        try {
+            // 2. Call FastAPI Backend
+            // We use defaults for age/gender if they aren't saved, to prevent errors
+            const response = await fetch(`${API_URL}/diet/predict`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    age: 25,        
+                    gender: "Male", 
+                    weight: parseFloat(weight || 70),
+                    height: parseFloat(height || 170),
+                    disease: disease || "General Health"
+                })
+            });
+
+            // 3. Handle Session Expiry (401)
+            if (response.status === 401) {
+                alert("Session expired. Please login again.");
+                localStorage.removeItem("token");
+                window.location.href = "login.html";
+                return;
+            }
+
+            const data = await response.json();
+
+            // 4. Update HTML with Results
+            document.getElementById("dispDisease").innerText = disease || "General";
+            document.getElementById("dispBMI").innerText = `${data.bmi_value} (${data.bmi_category})`;
+            document.getElementById("dispDiet").innerText = data.diet_type;
+            document.getElementById("dispCalories").innerText = data.calories + " kcal";
+            
+            // Handle array vs string for avoid foods
+            const avoidText = Array.isArray(data.avoid_foods) ? data.avoid_foods.join(", ") : data.avoid_foods;
+            document.getElementById("dispAvoid").innerText = avoidText;
+
+            // 5. Show Results Section
+            document.getElementById("loadingBox").classList.add("hidden");
+            document.getElementById("resultBox").classList.remove("hidden");
+
+        } catch (error) {
+            console.error(error);
+            document.getElementById("loadingBox").classList.add("hidden");
+            const errElem = document.getElementById("errorMsg");
+            errElem.innerText = "Error connecting to server. Is the backend running?";
+            errElem.classList.remove("hidden");
+        }
+    }
+
+    // Trigger immediately
+    getDietPlan();
+</script>
+
+</body>
+</html>

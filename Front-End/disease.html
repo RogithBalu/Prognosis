@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disease - Prognosis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="network"></canvas>
+
+<div style="position: absolute; top: 20px; right: 20px; z-index: 100;">
+    <button onclick="logout()" class="home-btn" style="padding: 8px 20px; font-size: 14px; background: #dc3545;">Logout</button>
+</div>
+
+<div class="top-center-box" style="margin-top: 10vh;">
+  <h1 class="main-brand">PROGNOSIS</h1>
+  <h2 class="form-title">Enter Health Details</h2>
+
+  <div class="login-box">
+    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+        <input type="number" id="weight" placeholder="Weight (kg)" required style="width: 50%;">
+        <input type="number" id="height" placeholder="Height (cm)" required style="width: 50%;">
+    </div>
+
+    <input id="disease" placeholder="Disease Name (e.g. Diabetes)">
+    
+    <button class="home-btn" onclick="saveAndProceed()">Generate Diet</button>
+  </div>
+</div>
+
+<script src="neural.js"></script>
+<script>
+    // Check if user is logged in
+    if (!localStorage.getItem('token')) {
+        window.location.href = 'login.html';
+    }
+
+    function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "index.html";
+    }
+
+    function saveAndProceed(){
+        const disease = document.getElementById("disease").value;
+        const weight = document.getElementById("weight").value;
+        const height = document.getElementById("height").value;
+
+        if(!disease || !weight || !height) {
+            alert("Please fill in all fields (Weight, Height, Disease)");
+            return;
+        }
+
+        // Save ALL data so diet.html can use it
+        localStorage.setItem("disease", disease);
+        localStorage.setItem("weight", weight);
+        localStorage.setItem("height", height);
+        
+        location.href = "diet.html";
+    }
+</script>
+</body>
+</html>
