@@ -1,4 +1,5 @@
-const API_URL = "https://prognosis-9844.onrender.com";
+
+const API_URL = "";
 
 // ==========================================
 // 1. LOGIN LOGIC (For login.html)
