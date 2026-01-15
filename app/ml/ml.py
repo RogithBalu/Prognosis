@@ -1,8 +1,9 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import LabelEncoder  # 👈 THIS WAS MISSING
 import pickle
-import os  # 👈 Import this!
+import os
 
 # Get the folder where THIS script (ml.py) lives
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
